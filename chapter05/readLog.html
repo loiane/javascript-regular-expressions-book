@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Log</title>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.5.0/bootstrap-table.min.css">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.5.0/bootstrap-table.min.js"></script>
+        <style>
+            body{
+                margin-top: 30px;
+                margin-right: 30px;
+                margin-left: 30px;
+            }
+        </style>
+    </head>
+<body>
+    <table data-toggle="table" data-url="log.json" data-cache="false" data-height="400"
+        data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true" data-select-item-name="toolbar1">
+    <thead>
+        <tr>
+            <th data-field="ip">IP</th>
+            <th data-field="time">Time</th>
+            <th data-field="request">Request Info</th>
+            <th data-field="status">Status</th>
+            <th data-field="size">Size</th>
+            <th data-field="referrer">Referrer</th>
+            <th data-field="userAgent">User Agent</th>
+        </tr>
+    </thead>
+    </table>          
+</body>
+</html>
