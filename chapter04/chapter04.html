@@ -34,7 +34,7 @@
             }
 
             console.log("Verified Data: ", data);
-        }
+        };
 
         function process_name() {
             var field = document.getElementById("name_field");
@@ -134,7 +134,7 @@
             var field = document.getElementById("website_field");
             var website = field.value;
 
-            var pattern = /^(?:https?:\/\/)?\w+(?:\.\w+)?(?:\.[A-Z]{2,3})+$/i
+            var pattern = /^(?:https?:\/\/)?\w+(?:\.\w+)?(?:\.[A-Z]{2,3})+$/i;
 
             if (pattern.test(website) === false) {
                 alert("Website is invalid");

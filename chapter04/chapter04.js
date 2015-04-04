@@ -15,13 +15,13 @@ form.onsubmit = function(e) {
     }
 
     console.log("Verified Data: ", data);
-}
+};
 
 function process_name() {
     var field = document.getElementById("name_field");
     var name = field.value;
 
-    var name_pattern = /^(\S+) (\S*) ?\b(\S+)$/;+)$/;
+    var name_pattern = /^(\S+) (\S*) ?\b(\S+)$/;
 
     if (name_pattern.test(name) === false) {
         alert("Name field is invalid");
@@ -115,7 +115,7 @@ function process_website() {
     var field = document.getElementById("website_field");
     var website = field.value;
 
-    var pattern = /^(?:https?:\/\/)?\w+(?:\.\w+)?(?:\.[A-Z]{2,3})+$/i
+    var pattern = /^(?:https?:\/\/)?\w+(?:\.\w+)?(?:\.[A-Z]{2,3})+$/i;
 
     if (pattern.test(website) === false) {
         alert("Website is invalid");
