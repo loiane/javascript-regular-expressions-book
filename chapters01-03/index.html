@@ -82,7 +82,7 @@
                 //get matches
                 var results = getMatches(regex, text);
 
-                if (results.length > 0) {
+                if (results.length > 0 && results[0] !== null) {
                     var html = getMatchesCountString(results);
                     html += getResultsString(results, text);
                     resultsbox.html(html);
